@@ -20,10 +20,18 @@ In Part 2 of the analysis I designed a Flask API based on the queries developed 
 
 ## Part 1 - Analysis and Exploration of the Climate Data
 
-1. List the employee number, last name, first name, sex, and salary of each employee.
+1. Used the provided files (climate_starter.ipynb and hawaii.sqlite) to complete the climate analysis and data exploration.
+2. Used the SQLAlchemy create_engine() function to connect to the SQLite database.
+3. Used the SQLAlchemy automap_base() function to reflect the tables into classes, and then saved references to the classes named station and measurement.
+4. Linked Python to the database by creating a SQLAlchemy session.
+5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
 
-2. List the first name, last name, and hire date for the employees who were hired in 1986.
+   ### Precipitation Analysis
 
-3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
-
-4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+    1. Found the most recent date in the dataset.
+    2. Using that date, got the previous 12 months of precipitation data by querying the previous 12 months of data. (Did not pass the date as a variable to the query.)
+    3. Selected only the "date" and "prcp" values.
+    4. Loaded the query results into a Pandas DataFrame. Explicitly set the column names.
+    5. Sorted the DataFrame values by "date".
+    6. Plotted the results by using the DataFrame plot method, as shown in Hawaii_12_months_precipitation.png
+    7. Used Pandas to print the summary statistics for the precipitation data.
