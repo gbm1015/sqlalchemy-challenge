@@ -45,9 +45,9 @@ In Part 2 of the analysis I designed a Flask API based on the queries developed 
        - Answered the following question: which station id has the greatest number of observations.
     3. Designed a query that calculated the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
     4. Designed a query to get the previous 12 months of temperature observation (TOBS) data. To do so, completed the following steps:
-      - Filtered by the station that has the greatest number of observations.
-      - Queried the previous 12 months of TOBS data for that station.
-      - Plotted the results as a histogram with bins=12, as shown in Observed_Temps_USC00519281.png
+       - Filtered by the station that has the greatest number of observations.
+       - Queried the previous 12 months of TOBS data for that station.
+       - Plotted the results as a histogram with bins=12, as shown in Observed_Temps_USC00519281.png
     5. Closed the session.
     
  ## Part 2 - Design of the Climate App
