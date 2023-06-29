@@ -37,6 +37,7 @@ In Part 2 of the analysis I designed a Flask API based on the queries developed 
     7. Used Pandas to print the summary statistics for the precipitation data.
 
   ### Station Analysis
+  
     1. Designed a query to find the most-active stations (that is, the stations that have the most rows). To do so, completed the following steps:
        - Listed the stations and observation counts in descending order.
        - Answered the following question: which station id has the greatest number of observations.
